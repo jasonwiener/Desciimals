@@ -16,6 +16,10 @@ Additionally, to conserve space, points only include the offset from the previou
 * encode delta point scaled/re-zerod using the min value (dead sea elevation)
 * encode the deltas
 * assemble the encoded string and return
+  * first point - 3 chars
+  * delta point - 3 chars
+  * resolution - 1 char ("1" | "2" | "3" ...)
+  * deltas - variable char length (defined in resolution)
 
 
 
